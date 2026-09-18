@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز ريكس - قطع غيار ولاصق شاشات</title>
+    <style>
+        :root {
+            --bg-color: #0d0f12;
+            --card-bg: #161b22;
+            --accent-gold: #d4af37;
+            --text-main: #f0f6fc;
+            --text-muted: #8b949e;
+            --border-color: #30363d;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            padding-bottom: 30px;
+        }
+
+        /* الهيدر العلوي */
+        header {
+            background: linear-gradient(180deg, #1f242d 0%, var(--bg-color) 100%);
+            padding: 25px 20px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        header h1 {
+            color: var(--accent-gold);
+            font-size: 28px;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .container {
+            padding: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* شريط البحث */
+        .search-box {
+            margin-bottom: 20px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 14px 18px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            background-color: var(--card-bg);
+            color: var(--text-main);
+            font-size: 15px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .search-box input:focus {
+            border-color: var(--accent-gold);
+        }
+
+        /* أزرار الشركات */
+        .brands-nav {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            scrollbar-width: none;
+        }
+
+        .brands-nav::-webkit-scrollbar {
+            display: none;
+        }
+
+        .brand-btn {
+            background-color: var(--card-bg);
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: 0.3s;
+        }
+
+        .brand-btn.active, .brand-btn:hover {
+            background-color: var(--accent-gold);
+            color: #000;
+            border-color: var(--accent-gold);
+        }
+
+        /* عنوان القسم */
+        .section-title {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: var(--accent-gold);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* كروت المنتجات */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 15px;
+        }
+
+        .product-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent-gold);
+        }
+
+        .product-tag {
+            background-color: rgba(212, 175, 55, 0.15);
+            color: var(--accent-gold);
+            font-size: 11px;
+            padding: 4px 8px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .product-title {
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        .product-desc {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .product-price {
+            font-weight: bold;
+            color: #4ed164;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .btn-order {
+            width: 100%;
+            padding: 8px 0;
+            background-color: transparent;
+            border: 1px solid var(--accent-gold);
+            color: var(--accent-gold);
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 13px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-order:hover {
+            background-color: var(--accent-gold);
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>مركز ريكس</h1>
+        <p>صيانة • قطع غيار أصيلة • لاصق شاشات VIP</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- مربع البحث -->
+        <div class="search-box">
+            <input type="text" placeholder="بحث عن موديل التلفون أو قطعة الغيار...">
+        </div>
+
+        <!-- تصفح الشركات -->
+        <div class="brands-nav">
+            <button class="brand-btn active">الكل</button>
+            <button class="brand-btn">آبل (iPhone)</button>
+            <button class="brand-btn">سامسونج</button>
+            <button class="brand-btn">شاومي</button>
+            <button class="brand-btn">هواوي</button>
+        </div>
+
+        <!-- قائمة المنتجات -->
+        <div class="section-title">
+            <span>📱</span> قطع الغيار ولاصق الشاشات المتوفرة
+        </div>
+
+        <div class="products-grid">
+            
+            <!-- كارت 1 -->
+            <div class="product-card">
+                <span class="product-tag">لاصق شاشة</span>
+                <div class="product-title">iPhone 15 Pro Max</div>
+                <div class="product-desc">لاصق سيراميك ضد الكسر + حماية كاميرا</div>
+                <div class="product-price">10,000 د.ع</div>
+                <button class="btn-order">طلب القطعة</button>
+            </div>
+
+            <!-- كارت 2 -->
+            <div class="product-card">
+                <span class="product-tag">شاشة كاملة</span>
+                <div class="product-title">Samsung S24 Ultra</div>
+                <div class="product-desc">شاشة أصلية تفكيك دبي (AMOLED)</div>
+                <div class="product-price">حسب الطلب</div>
+                <button class="btn-order">طلب القطعة</button>
+            </div>
+
+            <!-- كارت 3 -->
+            <div class="product-card">
+                <span class="product-tag">بطارية</span>
+                <div class="product-title">iPhone 13 Pro</div>
+                <div class="product-desc">بطارية أصلية مع ضمان سنة كاملة</div>
+                <div class="product-price">35,000 د.ع</div>
+                <button class="btn-order">طلب القطعة</button>
+            </div>
+
+            <!-- كارت 4 -->
+            <div class="product-card">
+                <span class="product-tag">لاصق شاشة</span>
+                <div class="product-title">Redmi Note 13</div>
+                <div class="product-desc">لاصق خصوصية (لقافة) مائل 180 درجة</div>
+                <div class="product-price">7,000 د.ع</div>
+                <button class="btn-order">طلب القطعة</button>
+            </div>
+
+            <!-- كارت 5 -->
+            <div class="product-card">
+                <span class="product-tag">منفذ شحن</span>
+                <div class="product-title">Samsung A54</div>
+                <div class="product-desc">فلاتة شحن أصلية يدعم الشحن السريع</div>
+                <div class="product-price">12,000 د.ع</div>
+                <button class="btn-order">طلب القطعة</button>
+            </div>
+
+            <!-- كارت 6 -->
+            <div class="product-card">
+                <span class="product-tag">لاصق شاشة</span>
+                <div class="product-title">Huawei P60 Pro</div>
+                <div class="product-desc">لاصق هيدروجيل شفاف للشاشات المنحنية</div>
+                <div class="product-price">8,000 د.ع</div>
+                <button class="btn-order">طلب القطعة</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
