@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مركز ريكس - صيانه وقطع غيار</title>
-    <!-- استدعاء أيقونات FontAwesome الشغالة 100% -->
+    <!-- استدعاء أيقونات FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -51,7 +51,7 @@
 
         .container {
             padding: 15px;
-            max-width: 650px;
+            max-width: 700px;
             margin: 0 auto;
         }
 
@@ -213,7 +213,7 @@
         <!-- البحث -->
         <div class="search-box">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" id="searchInput" onkeyup="filterProducts()" placeholder="ابحث عن جهاز، قطعة غيار، أو لاصق...">
+            <input type="text" id="searchInput" onkeyup="filterProducts()" placeholder="ابحث عن موديل، قطعة غيار، أو لاصق...">
         </div>
 
         <!-- التنقل بين الشركات -->
@@ -228,120 +228,260 @@
         <!-- قائمة قطع الغيار والخدمات -->
         <div class="products-grid" id="productsGrid">
             
-            <!-- آبل -->
+            <!-- أجهزة آبل (Apple iPhone) -->
+
+            <!-- سلسلة XS / XR -->
             <div class="product-card" data-brand="apple">
-                <i class="fa-solid fa-shield-cat product-icon"></i>
-                <span class="product-tag">لاصق شاشة</span>
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone XS</div>
+                <div class="product-desc">شاشات، بطاريات، ولاصق سيراميك ضد الكسر</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone XS Max</div>
+                <div class="product-desc">شاشات، بطاريات، ولاصق سيراميك ضد الكسر</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone XR</div>
+                <div class="product-desc">شاشات، بطاريات، ولاصق سيراميك ضد الكسر</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <!-- سلسلة iPhone 11 -->
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 11</div>
+                <div class="product-desc">شاشات أصلية، بطاريات، ولاصق VIP</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 11 Pro</div>
+                <div class="product-desc">شاشات أصلية، بطاريات، ولاصق VIP</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 11 Pro Max</div>
+                <div class="product-desc">شاشات أصلية، بطاريات، ولاصق VIP</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <!-- سلسلة iPhone 12 -->
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 12 mini</div>
+                <div class="product-desc">شاشات، بطاريات، حماية شاشة وكاميرا</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 12</div>
+                <div class="product-desc">شاشات، بطاريات، حماية شاشة وكاميرا</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 12 Pro</div>
+                <div class="product-desc">شاشات، بطاريات، حماية شاشة وكاميرا</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 12 Pro Max</div>
+                <div class="product-desc">شاشات، بطاريات، حماية شاشة وكاميرا</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <!-- سلسلة iPhone 13 -->
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 13 mini</div>
+                <div class="product-desc">جميع قطع الغيار ولاصق الخصوصية 11D</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 13</div>
+                <div class="product-desc">جميع قطع الغيار ولاصق الخصوصية 11D</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 13 Pro</div>
+                <div class="product-desc">جميع قطع الغيار ولاصق الخصوصية 11D</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 13 Pro Max</div>
+                <div class="product-desc">جميع قطع الغيار ولاصق الخصوصية 11D</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <!-- SE & سلسلة iPhone 14 -->
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone SE (2022)</div>
+                <div class="product-desc">شاشات، بطاريات ولاصق حراري</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 14</div>
+                <div class="product-desc">قطع غيار وكالة وحماية شاشة متكاملة</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 14 Plus</div>
+                <div class="product-desc">قطع غيار وكالة وحماية شاشة متكاملة</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 14 Pro</div>
+                <div class="product-desc">قطع غيار وكالة وحماية شاشة متكاملة</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 14 Pro Max</div>
+                <div class="product-desc">قطع غيار وكالة وحماية شاشة متكاملة</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <!-- سلسلة iPhone 15 -->
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 15</div>
+                <div class="product-desc">لاصق نانو ضد الصدمات وشاشات تفكيك</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 15 Plus</div>
+                <div class="product-desc">لاصق نانو ضد الصدمات وشاشات تفكيك</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 15 Pro</div>
+                <div class="product-desc">لاصق نانو ضد الصدمات وشاشات تفكيك</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
                 <div class="product-title">iPhone 15 Pro Max</div>
-                <div class="product-desc">لاصق سيراميك 9D ضد الكسر واللقافة</div>
-                <div class="product-price">10,000 د.ع</div>
+                <div class="product-desc">لاصق نانو ضد الصدمات وشاشات تفكيك</div>
+                <div class="product-price">متوفر</div>
+                <button class="btn-order">طلب الخدمة</button>
+            </div>
+
+            <!-- سلسلة iPhone 16 -->
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 16</div>
+                <div class="product-desc">أحدث لاصق حماية وكاميرات وقطع غيار</div>
+                <div class="product-price">متوفر</div>
                 <button class="btn-order">طلب الخدمة</button>
             </div>
 
             <div class="product-card" data-brand="apple">
-                <i class="fa-solid fa-battery-full product-icon"></i>
-                <span class="product-tag">بطارية أصلية</span>
-                <div class="product-title">iPhone 13 / 13 Pro</div>
-                <div class="product-desc">بطارية أصلية مع الضمان ونسبة 100%</div>
-                <div class="product-price">35,000 د.ع</div>
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 16 Plus</div>
+                <div class="product-desc">أحدث لاصق حماية وكاميرات وقطع غيار</div>
+                <div class="product-price">متوفر</div>
                 <button class="btn-order">طلب الخدمة</button>
             </div>
 
-            <!-- سامسونج -->
-            <div class="product-card" data-brand="samsung">
-                <i class="fa-solid fa-mobile-retro product-icon"></i>
-                <span class="product-tag">شاشة أصلية</span>
-                <div class="product-title">Samsung S24 Ultra</div>
-                <div class="product-desc">شاشة AMOLED وكالة تفكيك دبي</div>
-                <div class="product-price">حسب السعر اليومي</div>
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 16 Pro</div>
+                <div class="product-desc">أحدث لاصق حماية وكاميرات وقطع غيار</div>
+                <div class="product-price">متوفر</div>
                 <button class="btn-order">طلب الخدمة</button>
             </div>
 
-            <div class="product-card" data-brand="samsung">
-                <i class="fa-solid fa-shield-halved product-icon"></i>
-                <span class="product-tag">لاصق شاشة</span>
-                <div class="product-title">Samsung A54 / A55</div>
-                <div class="product-desc">لاصق جل مع حماية كاميرا خلفية</div>
-                <div class="product-price">8,000 د.ع</div>
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 16 Pro Max</div>
+                <div class="product-desc">أحدث لاصق حماية وكاميرات وقطع غيار</div>
+                <div class="product-price">متوفر</div>
                 <button class="btn-order">طلب الخدمة</button>
             </div>
 
-            <!-- شاومي -->
-            <div class="product-card" data-brand="xiaomi">
-                <i class="fa-solid fa-plug-circle-bolt product-icon"></i>
-                <span class="product-tag">فلاتة شحن</span>
-                <div class="product-title">Redmi Note 12 / 13</div>
-                <div class="product-desc">قاعدة شحن أصلية تدعم الشحن السريع</div>
-                <div class="product-price">12,000 د.ع</div>
-                <button class="btn-order">طلب الخدمة</button>
-            </div>
-
-            <div class="product-card" data-brand="xiaomi">
-                <i class="fa-solid fa-note-sticky product-icon"></i>
-                <span class="product-tag">لاصق شاشة</span>
-                <div class="product-title">Poco X6 Pro</div>
-                <div class="product-desc">حماية هيدروجيل مات ضد البصمات</div>
-                <div class="product-price">7,000 د.ع</div>
-                <button class="btn-order">طلب الخدمة</button>
-            </div>
-
-            <!-- هواوي -->
-            <div class="product-card" data-brand="huawei">
-                <i class="fa-solid fa-mattress-pillow product-icon"></i>
-                <span class="product-tag">لاصق شاشة</span>
-                <div class="product-title">Huawei P60 Pro</div>
-                <div class="product-desc">لاصق هيدروجيل شفاف للشاشات المنحنية</div>
-                <div class="product-price">8,000 د.ع</div>
-                <button class="btn-order">طلب الخدمة</button>
-            </div>
-
-            <div class="product-card" data-brand="huawei">
-                <i class="fa-solid fa-wrench product-icon"></i>
-                <span class="product-tag">ظهر زجاجي</span>
-                <div class="product-title">Huawei Mate 40 Pro</div>
-                <div class="product-desc">غطاء خلفي أصلية مع عدسة الكاميرا</div>
-                <div class="product-price">20,000 د.ع</div>
-                <button class="btn-order">طلب الخدمة</button>
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- كود الجافاسكربت للتصفية السريعة والبحث -->
-    <script>
-        // التصفية حسب الشركة
-        function filterBrand(brand, btn) {
-            // تغيير زر النشط
-            let buttons = document.querySelectorAll('.brand-btn');
-            buttons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-
-            // تصفية المنتجات
-            let cards = document.querySelectorAll('.product-card');
-            cards.forEach(card => {
-                if (brand === 'all' || card.getAttribute('data-brand') === brand) {
-                    card.style.display = 'flex';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        }
-
-        // البحث الفوري
-        function filterProducts() {
-            let input = document.getElementById('searchInput').value.toLowerCase();
-            let cards = document.querySelectorAll('.product-card');
-
-            cards.forEach(card => {
-                let text = card.innerText.toLowerCase();
-                if (text.includes(input)) {
-                    card.style.display = 'flex';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        }
-    </script>
-</body>
-</html>
+            <div class="product-card" data-brand="apple">
+                <i class="fa-brands fa-apple product-icon"></i>
+                <span class="product-tag">قطع غيار ولاصق</span>
+                <div class="product-title">iPhone 16e</div>
+                <div class="product-desc">أحدث لاصق حماية وكاميرات وقطع غيار</div>
